@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-nav a {
+nav .nav-item {
     text-decoration: none;
     color: #272727;
 }
