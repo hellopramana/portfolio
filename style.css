@@ -79,14 +79,48 @@ img {
 .hero-icon {
     margin-top: 8px;
 }
+
+/* Works Section */
+.works .container-content {
+    padding-bottom: 120px;
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.row-2 {
+    display: flex;
+    gap: 24px;
+}
+
+.project-content {
+    margin-top: 10px;
+}
+
+
+/* About Section */
+.about .container-content {
+    padding: 120px 0;
+}
+
+/* Call to Action Section */
+
+
+
+
 /* Utility Classes */
+/* section {
+    padding: 120px 0;
+} */
+
 .container {
     max-width: 1032px;
     margin: auto;
 }
 
 .container-content {
-    padding: 120px auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 /* button */
