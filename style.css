@@ -127,15 +127,33 @@ img {
 .btn {
     display: inline-block;
     background: var(--sunset);
+    background-size: 200% 200%; /* for gradient animation */
     padding: 16px 24px;
     border-radius: 100px;
     color: var(--neutral-100);
-    transition: 0.2s ease-in;
-    width:fit-content;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
+    animation: gradientMove 3s ease infinite;
+    box-shadow: 0 8px 20px rgba(255, 100, 103, 0.4);
+}
+
+/* Gradient shift animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 80%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Text Classes */
