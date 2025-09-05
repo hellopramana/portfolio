@@ -30,7 +30,7 @@ a.navigation__item {
 
 .hero__content {
   display: flex;
-  align-items: center;
+  align-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -39,13 +39,13 @@ a.navigation__item {
   text-align: center;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 532px) {
   .hero__container {
     align-items: flex-start;
   }
 
   .hero__content {
-    text-align: left;
+    /* text-align: left; */
     gap: 10px;
   }
 
