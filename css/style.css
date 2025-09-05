@@ -1,6 +1,6 @@
 /* ---------------Navigation--------------- */
 .navigation__container {
-  padding-block: 1.25rem;
+  padding-block: 2.25rem;
 }
 
 ul.navigation__links {
@@ -31,6 +31,7 @@ a.navigation__item {
 .hero__content {
   display: flex;
   align-content: space-around;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -55,6 +56,9 @@ a.navigation__item {
 }
 
 /* ---------------Works Section--------------- */
+.works {
+  container: works-grid / inline-size;
+}
 
 .works__container {
   display: grid;
@@ -112,13 +116,88 @@ a.navigation__item {
   object-fit: cover;
 }
 
-@media screen and (max-width: 440px) {
+/* @media screen and (max-width: 440px) {
   .works__container {
     grid-template-columns: 1fr;
-    /* grid-template-rows: auto auto auto; */
+    grid-template-rows: auto auto auto;
   }
 
   .works__item1 {
     grid-column: 1;
+  }
+} */
+
+@container works-grid (width < 75ch) {
+  .works__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4];
+  }
+
+  .works__item1 {
+    grid-column: 1;
+  }
+}
+
+/* ---------------Testimonials Section--------------- */
+.testimonials {
+  container: testimonials-grid / inline-size;
+}
+
+.testimonials__container {
+  justify-items: center;
+}
+
+.testimonials__heading {
+  text-align: center;
+}
+
+.testimonials__row {
+  display: grid;
+  grid-template-columns: [column1] 4fr [column2] 2fr [column3] 6fr [column4];
+  grid-template-rows: auto;
+  justify-content: space-between;
+  padding-block: clamp(2.5rem, 1.4rem + 4vw, 5rem);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.testimonials__row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.testimonials__profile {
+  gap: 20px;
+  align-items: center;
+}
+
+.testimonials__profile img {
+  width: 64px;
+  height: 64px;
+}
+
+.testimonials__title {
+  color: var(--text-mid);
+}
+
+.testimonials__quote-content {
+  grid-column: column3 / column4;
+}
+
+@container testimonials-grid (width<75ch) {
+  .testimonials__container {
+    justify-items: left;
+  }
+
+  .testimonials__heading {
+    text-align: left;
+  }
+  .testimonials__row {
+    grid-template-columns: [column1] 1fr [column2];
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+  }
+
+  .testimonials__quote-content {
+    grid-column: column1 / column2;
   }
 }

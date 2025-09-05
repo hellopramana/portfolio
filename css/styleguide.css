@@ -26,17 +26,17 @@ h2.stylized {
 
 h3 {
   font-family: 'Manrope', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: clamp(1.25rem, 1.156rem + 0.38vw, 1.5rem);
   line-height: 1.5;
 }
 
 h4 {
   font-family: 'Manrope', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
-  font-size: clamp(1.25rem, 1.156rem + 0.38vw, 1.5rem);
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -61,7 +61,7 @@ p.medium {
 
 p.small {
   font-weight: 400;
-  font-size: clamp(1.25rem, 1.156rem + 0.38vw, 1.5rem);
+  font-size: 0.75rem;
   line-height: 1;
 }
 
@@ -94,7 +94,7 @@ a {
   /* Mapped */
   --text-dark: hsl(0, 0%, 15%);
   --text-light: hsl(0, 0%, 100%);
-  --text-mid: vhsl(0, 0%, 69%);
+  --text-mid: hsl(0, 0%, 69%);
   --bg-light: hsl(0, 0%, 100%);
   --bg-dark: hsl(0, 0%, 15%);
   --gradient-orange: hsl(23, 100%, 60%);
