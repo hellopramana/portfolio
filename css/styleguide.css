@@ -1,0 +1,138 @@
+/* ----------------- Typography ----------------- */
+
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(2.5rem, 1.562rem + 3.82vw, 5rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(2rem, 1.249rem + 3.06vw, 4rem);
+  line-height: 1.2;
+}
+
+h2.stylized {
+  font-family: 'EB Garamond', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: clamp(2rem, 1.249rem + 3.06vw, 4rem);
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.25rem, 1.156rem + 0.38vw, 1.5rem);
+  line-height: 1.5;
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p.xlarge {
+  font-weight: 600;
+  font-size: clamp(1.75rem, 1.281rem + 1.91vw, 3rem);
+}
+
+p.medium {
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.156rem + 0.38vw, 1.5rem);
+  line-height: 1;
+}
+
+p.small {
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.156rem + 0.38vw, 1.5rem);
+  line-height: 1;
+}
+
+p.quotes {
+  font-size: clamp(1.25rem, 1.156rem + 0.38vw, 1.5rem);
+  line-height: 1.5;
+}
+
+a {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* ----------------- Colors ----------------- */
+
+:root {
+  /* Brand */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 15%);
+  --grey: hsl(0, 0%, 92%);
+  --darker-grey: hsl(0, 0%, 69%);
+  --sunset1: hsl(23, 100%, 60%);
+  --sunset2: hsl(359, 100%, 70%);
+
+  /* Mapped */
+  --text-dark: hsl(0, 0%, 15%);
+  --text-light: hsl(0, 0%, 100%);
+  --text-mid: vhsl(0, 0%, 69%);
+  --bg-light: hsl(0, 0%, 100%);
+  --bg-dark: hsl(0, 0%, 15%);
+  --gradient-orange: hsl(23, 100%, 60%);
+  --gradient-pink: hsl(359, 100%, 70%);
+  --btn-text: hsl(0, 0%, 100%);
+  --btn-bg-1: hsl(23, 100%, 60%);
+  --btn-bg-2: hsl(359, 100%, 70%);
+  --link-dark: hsl(0, 0%, 15%);
+  --link-light: hsl(0, 0%, 100%);
+  --border-primary: hsl(0, 0%, 92%);
+  --icon-light: hsl(0, 0%, 100%);
+}
+
+/* ----------------- Layout ----------------- */
+
+.flex {
+  display: flex;
+}
+
+.section {
+  display: block;
+  padding-inline: clamp(1.25rem, -1.096rem + 9.55vw, 7.5rem);
+}
+
+.container {
+  width: 100%;
+  max-width: 75em;
+  margin-inline: auto;
+  padding-block: clamp(3.75rem, 2.342rem + 5.73vw, 7.5rem);
+}
+
+/* ----------------- Buttons ----------------- */
+
+.btn {
+  display: inline-block;
+  color: var(--btn-text);
+  background: linear-gradient(45deg, var(--btn-bg-1) 0%, var(--btn-bg-2) 100%);
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  border-radius: 100px;
+}

@@ -1,54 +1,83 @@
+<!-- Design and Developed by Aditya Pramana -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Pramana</title>
-    <link rel="favicon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header id="header">
-        <nav class="nav-bar">
-            <div class="nav-warp">
-                <div class="navlink-warp">
-                    <ul>
-                    <li>
-                        <a href="#">Works</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Me</a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Pramana - Web Designer & Developer</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styleguide.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navigation">
+      <div class="container navigation__container">
+        <nav>
+          <ul class="navigation__links flex">
+            <li class="navigation__link">
+              <a href="/" class="navigation__item">Works</a>
+            </li>
+            <li class="navigation__link">
+              <a href="/" class="navigation__item">About</a>
+            </li>
+            <li class="navigation__link">
+              <a href="/" class="navigation__item">Contact Me</a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
 
     <main>
-        <section class="section hero-section">
-            <div class="container">
-                <div class="row row-1">
-                    <h1 class="hero-title">
-                        Transform abstract idea into visual & result
-                    </h1>
-                </div>
-                <div class="row row-2">
-                    <h4>
-                        <span>Aditya Pramana</span> <img src="images/asterisk.svg" alt="asterisk">
-                        <span>Web Designer & Developer</span>
-                    </h4>
-                </div>
-            </div>
-        </section>
+      <section class="hero section">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h4 class="hero__subtitle">Aditya Pramana</h4>
+            <span
+              ><img src="/images/asterisk.svg" alt="" class="hero__icon"
+            /></span>
+            <h4>Web Designer & Developer</h4>
+          </div>
+          <h1 class="hero__heading">
+            Transform abstract idea into visual & result
+          </h1>
+          <a href="#" class="hero__btn btn">Work With Me</a>
+        </div>
+      </section>
 
+      <section class="works section">
+        <div class="works__container container">
+          <div class="works__item1">
+            <img src="/images/Tone-app.jpg" alt="Tone App" />
+          </div>
+          <div class="works__item2">
+            <img src="/images/kanaka.jpg" alt="Kanaka" />
+          </div>
+          <div class="works__item3">
+            <img src="/images/pluvia.jpg" alt="Pluvia" />
+          </div>
+        </div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>

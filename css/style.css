@@ -1,0 +1,124 @@
+/* ---------------Navigation--------------- */
+.navigation__container {
+  padding-block: 1.25rem;
+}
+
+ul.navigation__links {
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+  margin-inline: auto;
+}
+
+li.navigation__link {
+  display: inline-block;
+}
+
+a.navigation__item {
+  color: var(--link-dark);
+  text-transform: uppercase;
+}
+
+/* ---------------Hero Section--------------- */
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero__heading {
+  text-align: center;
+}
+
+@media screen and (max-width: 440px) {
+  .hero__container {
+    align-items: flex-start;
+  }
+
+  .hero__content {
+    text-align: left;
+    gap: 10px;
+  }
+
+  .hero__heading {
+    text-align: left;
+  }
+}
+
+/* ---------------Works Section--------------- */
+
+.works__container {
+  display: grid;
+  grid-template-columns: [column1] 1fr [column2] 1fr [column3];
+  grid-template-rows: [row1] auto [row2] auto [row3];
+  gap: 1.5rem 1.5rem;
+}
+
+.works__item1 {
+  grid-column: 1 / span 2;
+  max-height: fit-content;
+  min-height: 353px;
+  /* background-image: url(/images/Tone-app.jpg);
+  background-size: cover;
+  background-position: center; */
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.works__item1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.works__item2 {
+  min-height: 353px;
+  max-height: 35.6em;
+  /* background-image: url(/images/kanaka.jpg);
+  background-size: cover;
+  background-position: center; */
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.works__item2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.works__item3 {
+  min-height: 353px;
+  max-height: 35.6em;
+  /* background-image: url(/images/pluvia.jpg);
+  background-size: cover;
+  background-position: center; */
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.works__item3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 440px) {
+  .works__container {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: auto auto auto; */
+  }
+
+  .works__item1 {
+    grid-column: 1;
+  }
+}
