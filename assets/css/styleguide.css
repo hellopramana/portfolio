@@ -1,3 +1,4 @@
+/* Design and Developed by Aditya Pramana */
 /* ----------------- Typography ----------------- */
 
 h1 {
@@ -106,6 +107,7 @@ a {
   --link-light: hsl(0, 0%, 100%);
   --border-primary: hsl(0, 0%, 92%);
   --icon-light: hsl(0, 0%, 100%);
+  --gradient: linear-gradient(310deg, var(--sunset1) 0%, var(--sunset2) 100%);
 }
 
 /* ----------------- Layout ----------------- */

@@ -1,3 +1,4 @@
+/* Design and Developed by Aditya Pramana */
 /* ---------------Navigation--------------- */
 .navigation__container {
   padding-block: 2.25rem;
@@ -199,5 +200,110 @@ a.navigation__item {
 
   .testimonials__quote-content {
     grid-column: column1 / column2;
+  }
+}
+
+/* ---------------About Section--------------- */
+
+.about__container {
+  position: relative;
+}
+
+.about__linear-gradient {
+  position: absolute;
+  width: 320px;
+  top: -2rem;
+  left: -2rem;
+  z-index: -1;
+}
+
+/* ---------------Footer Section--------------- */
+
+.footer__section {
+  background: var(--gradient);
+  color: var(--text-light);
+}
+
+.footer__content {
+  height: clamp(29rem, 25.59rem + 12.4vw, 36.75rem);
+  padding: clamp(1.25rem, 0.7rem + 2vw, 2.5rem);
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/images/footer_background.jpg);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-repeat: 0;
+  background-size: cover;
+  background-color: rgba(13, 13, 13, 0.855);
+  border-radius: 0.5rem;
+  box-shadow: 40px 40px 100px 0px hsla(0, 0%, 100%, 0.15);
+}
+
+.footer__row-top {
+  justify-content: space-between;
+}
+
+.footer__icon {
+  width: clamp(2.063rem, 1.155rem + 3.3vw, 4.125rem);
+}
+
+.footer__row-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer__column-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: calc(100ch - 25em);
+}
+
+.footer__email-button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer__email-text {
+}
+
+.footer__copy-button {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.footer__copy-icon {
+}
+
+.footer__column-socials {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+}
+
+.footer__socials-links {
+  list-style: none;
+  display: flex;
+  gap: clamp(0.5rem, 0.17rem + 1.2vw, 1.25rem);
+}
+
+.footer__socials-item > a {
+  color: var(--link-light);
+}
+
+@media screen and (max-width: 900px) {
+  .footer__row-bottom {
+    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__column-socials {
+    justify-content: flex-start;
   }
 }
